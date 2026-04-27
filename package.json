@@ -1,0 +1,29 @@
+{
+  "name": "pdf-hub",
+  "version": "2.0.0",
+  "description": "Secure, performant PDF hub server with comprehensive features",
+  "main": "src/server.js",
+  "scripts": {
+    "prepare": "node prepare.js",
+    "start": "node prepare.js && node server.js",
+    "dev": "node prepare.js && node server.js",
+    "test": "echo \"Add tests here\""
+  },
+  "keywords": ["pdf", "server", "hub"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
