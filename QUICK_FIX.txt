@@ -1,0 +1,51 @@
+═══════════════════════════════════════════════════════════════════════
+                    ⚡ GITHUB PAGES FIX - QUICK START
+═══════════════════════════════════════════════════════════════════════
+
+THE PROBLEM:
+  You see README.md instead of your website on GitHub Pages
+
+THE REASON:
+  GitHub Pages looks for index.html in the ROOT directory
+  Your index.html is in /public directory
+
+THE FIX (takes 2 minutes):
+═════════════════════════
+
+STEP 1: Run setup script
+  $ node github-pages-setup.js
+  ✓ Copies index.html to root
+  ✓ Copies other HTML files
+  ✓ Creates .nojekyll file
+
+STEP 2: Push to GitHub
+  $ git add .
+  $ git commit -m "Configure for GitHub Pages"
+  $ git push origin main
+
+STEP 3: Configure GitHub
+  1. Go to Settings → Pages
+  2. Source: main branch / root folder
+  3. Click Save
+
+STEP 4: Wait & Visit
+  Wait 1-5 minutes
+  Visit: https://your-username.github.io/your-repo-name
+
+═════════════════════════════════════════════════════════════════════════
+
+✅ DONE! Your website is live!
+
+═════════════════════════════════════════════════════════════════════════
+
+⚠️  REMEMBER:
+
+  GitHub Pages = Static files only
+  ✅ Can show: HTML pages, CSS, JavaScript
+  ❌ Cannot run: Authentication, Server, Database
+
+If you want authentication:
+  Use Vercel, Railway, or Heroku instead
+  (See DEPLOYMENT_GUIDE.md)
+
+═════════════════════════════════════════════════════════════════════════
